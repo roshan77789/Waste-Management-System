@@ -1,0 +1,189 @@
+:root {
+    --dark-green: #009F00;
+    --light-green: #6EFE47;
+    --green: rgb(172, 222, 35);
+    --super-light-green: #F0FAF2;
+    --black: rgb(51, 51, 51);
+    --white: #fff;
+    --grey: #808080;
+    --invalid: rgb(242, 222, 222);
+    --blue: rgb(35, 82, 124)
+}
+
+body {
+    width: 100%;
+}
+
+.sign-up {
+    margin: 40px auto 0;
+    width: 80%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+
+.logo img {
+    width: 12vw;
+}
+
+.sign-up-form {
+    width: 40%;
+    position: relative;
+    margin: 40px auto 0;
+}
+
+.sign-up-form h2 {
+    font-weight: 500;
+    color: var(--black);
+}
+
+.invalid {
+    background-color: var(--invalid);
+    color: rgb(169, 68, 71);
+    font-weight: 400;
+    font-size: 14px;
+    padding: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+    margin-top: 20px;
+}
+
+.whoops {
+    font-weight: 600;
+}
+
+.error {
+    padding: 20px 20% 0;
+}
+
+.sign-up-form label {
+    display: inline-block;
+    margin: 20px 0 0 0;
+    font-size: 14px;
+    color: var(--black);
+    opacity: .8;
+}
+
+.sign-up-form input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--grey);
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+    opacity: .8;
+}
+
+#number {
+    padding-left: 20px;
+}
+
+#number::placeholder {
+    position: relative;
+    left: -20px;
+}
+
+#nepali-number {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+#nepali-number::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 9px;
+    width: 40px;
+    height: 1px;
+    background-color: var(--grey);
+}
+
+.number-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-eye {
+    position: absolute;
+    right: 5px;
+    color: var(--grey);
+}
+
+.fa-eye::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 2px;
+    background-color: var(--grey);
+    transform: rotate(45deg);
+    top: -2px;
+    left: 7px;
+}
+
+.fa-eye.show-eye::after {
+    height: 20px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.btn button {
+    padding: 8px 24px;
+    text-transform: capitalize;
+    cursor: pointer;
+    background-color: var(--dark-green);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    transition: .25s;
+}
+
+.btn button:hover {
+    transform: scale(1.05);
+}
+
+.btn button:active {
+    transform: scale(.95);
+}
+
+.login-link {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 20px 0;
+}
+
+.already {
+    opacity: .5;
+    text-align: center;
+}
+
+.login {
+    font-size: 15px;
+    margin-left: 5px;
+    color: var(--blue);
+}
+
+@media(max-width:770px) {
+    .sign-up {
+        width: 100%;
+    }
+
+    .sign-up-form {
+        width: 70%;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+}

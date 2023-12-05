@@ -1,0 +1,165 @@
+:root {
+    --dark-green: #009F00;
+    --light-green: #6EFE47;
+    --green: rgb(172, 222, 35);
+    --super-light-green: #F0FAF2;
+    --black: rgb(51, 51, 51);
+    --white: #fff;
+    --grey: #808080;
+    --invalid: rgb(242, 222, 222);
+    --blue: rgb(35, 82, 124);
+    --red: rgb(169, 68, 71);
+}
+
+.login {
+    width: 80%;
+    margin: 40px auto 0;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 12vw;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.login-form {
+    width: 45%;
+    position: relative;
+}
+
+.login-form h2 {
+    padding: 50px 0 20px 0;
+    font-weight: 500;
+}
+
+.invalid {
+    background-color: var(--invalid);
+    color: var(--red);
+    font-weight: 400;
+    font-size: 14px;
+    padding: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+
+label {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: .8;
+}
+
+label i {
+    margin-right: 10px;
+}
+
+input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--grey);
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+    opacity: .8;
+}
+
+.fa-eye {
+    position: absolute;
+    right: 5px;
+    color: var(--grey);
+}
+
+.fa-eye::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 2px;
+    background-color: var(--grey);
+    transform: rotate(45deg);
+    top: -2px;
+    left: 7px;
+}
+
+.fa-eye.show-eye::after {
+    height: 20px;
+}
+
+.forgot {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--blue);
+    font-size: 15px;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.btn button {
+    padding: 8px 24px;
+    text-transform: capitalize;
+    cursor: pointer;
+    background-color: var(--dark-green);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    transition: .25s;
+}
+
+.btn button:hover {
+    transform: scale(1.05);
+}
+
+.btn button:active {
+    transform: scale(.95);
+}
+
+.sign-up-link {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sign-up-link a {
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 17px;
+    margin-left: 3px;
+    opacity: .8;
+}
+
+.password-input {
+    position: relative;
+}
+
+@media(max-width:770px) {
+    .login {
+        width: 100%;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+}
+
+@media(max-width: 550px) {
+    .login-form {
+        width: 70%;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="login">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="./images/main-images/ecoCycleLogo.png" alt="ecoCycleLogo"
+        /></a>
+      </div>
+      <div class="form">
+        <form class="login-form">
+          <h2>Login</h2>
+          <div class="invalid">Email or Password not Valid</div>
+          <label for="email"
+            ><i class="fa-solid fa-envelope"></i>Email/Mobile Number</label
+          >
+          <br />
+          <input type="email" name="email" id="email" class="email-input" />
+          <br />
+          <label for="password"
+            ><i class="fa-solid fa-unlock"></i>Password</label
+          >
+          <br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="password-input"
+          />
+          <i class="fa-solid fa-eye"></i>
+          <a href="forgotPassword.html">
+            <p class="forgot">Forgot Password?</p>
+          </a>
+          <div class="btn">
+            <button class="continue-btn">continue</button>
+          </div>
+          <p class="sign-up-link">
+            Don't have an account yet? <a href="./signUp.html">Sign Up</a>
+          </p>
+        </form>
+      </div>
+    </section>
+    <script src="./JS/login.js"></script>
+  </body>
+</html>

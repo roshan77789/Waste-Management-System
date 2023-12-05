@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/signUP.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="sign-up">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="./images/main-images/ecoCycleLogo.png" alt="ecoCycleLogo"
+        /></a>
+      </div>
+      <form class="sign-up-form">
+        <h2>Sign Up</h2>
+        <div class="invalid">
+          <span class="whoops">Whoops!</span> There was some problem
+          <p class="error"></p>
+        </div>
+
+        <label for="firstName">Enter your first Name *</label>
+        <br />
+        <input type="text" id="firstName" required />
+        <br />
+        <label for="lastName">Enter your last Name *</label>
+        <br />
+        <input type="text" id="lastName" required />
+        <br />
+        <label for="email">Enter your email *</label>
+        <br />
+        <input type="email" id="email" required />
+        <br />
+        <label for="number">Enter your phone number</label>
+        <br />
+        <div class="number-container">
+          <label for="number" id="nepali-number">+977</label>
+          <input type="text" id="number" class="nep-num" required />
+        </div>
+        <br />
+        <label for="password" class="password-input"
+          >Enter your password *</label
+        >
+        <br />
+        <input type="password" id="password" required />
+        <i class="fa-solid fa-eye"></i>
+        <br />
+        <div class="btn">
+          <button class="sign-up-btn">Continue</button>
+        </div>
+        <div class="login-link">
+          <span class="already">Already have an account?</span
+          ><span><a href="login.html" class="login">Login</a></span>
+        </div>
+      </form>
+    </section>
+    <script src="./JS/signUp.js"></script>
+  </body>
+</html>

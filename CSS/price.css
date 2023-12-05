@@ -1,0 +1,97 @@
+:root {
+
+    /*  for colors */
+
+    --dark-green: #009F00;
+    --light-green: #6EFE47;
+    --green: rgb(172, 222, 35);
+    --super-light-green: #F0FAF2;
+    --black: #000;
+    --white: #fff;
+    --grey: #808080;
+
+}
+
+.price {
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.price h3 {
+    background-color: var(--grey);
+    color: var(--white);
+    padding: 30px;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.price h2 {
+    font-size: 18px;
+    padding: 15px 0;
+    text-transform: capitalize;
+    opacity: .7;
+}
+
+.price p {
+    font-size: 20px;
+    opacity: .5;
+}
+
+.price-container {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.price-item {
+    border: 1px solid var(--grey);
+    padding: 30px;
+    cursor: pointer;
+    transition: .25s;
+    border-radius: 5px;
+}
+
+.price-item:hover {
+    border: 3px solid var(--green);
+}
+
+.price-container img {
+    width: 100%;
+    height: 60%;
+}
+
+.price .price-title {
+    text-align: left;
+    margin-left: 10%;
+    font-size: 30px;
+}
+
+@media(max-width:800px) {
+    .price .price-title {
+        margin-left: 5%;
+        font-size: 25px;
+    }
+
+    .price h3 {
+        font-size: 18px;
+        padding: 25px;
+    }
+
+    .price-container {
+        width: 90%;
+    }
+
+    .price-item {
+        padding: 20px;
+    }
+
+    .price-container img {
+        width: 50%;
+        height: 50%;
+    }
+}
