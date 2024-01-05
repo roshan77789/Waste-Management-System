@@ -549,7 +549,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     font-size: 20px;
 }
 
-.fifth-wrapper {
+.sixth-wrapper {
     border-bottom: 1px solid var(--black);
 }
 
@@ -720,7 +720,7 @@ footer {
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    background-color: var(--dark-green);
+    background-color: var(--light-green);
     z-index: 98;
     display: grid;
     place-items: center;
@@ -957,6 +957,7 @@ footer {
 
     .nav-container {
         width: 200px;
+        top: 64px;
     }
 
     .all-questions {
@@ -1019,5 +1020,22 @@ body.active-sun {
 .main-nav-dark-theme {
     background-color: var(--dark-theme);
 }
+
+
+.nav-container ul li.nav-container-dark-li {
+    border-color: var(--dark-theme);
+    transition: .3s;
+}
+
+.nav-container ul li.nav-container-dark-li:hover {
+    border-color: var(--dark-green);
+}
+
+.nav-container ul li a.nav-container-dark-li-a {
+    color: white;
+}
+
+
+
 
 /* --------------------------- background theme end --------------------- */
